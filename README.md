@@ -1,77 +1,20 @@
-# ☀️ SolarQuest-AI — Enterprise Yield Forecaster & Anomaly Engine
+# SolarQuest-AI — research prototype
 
-> **A real-time, ML-powered infrastructure platform predicting utility-scale solar generation with 98.38% accuracy and automated hardware fault detection.**
+SolarQuest explores solar generation prediction and historical plant underperformance. **This is an experimental prototype, not a production operational, trading or fault-diagnosis system.**
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B?style=for-the-badge&logo=streamlit)
-![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-1.3%2B-F7931E?style=for-the-badge&logo=scikit-learn)
-![Open-Meteo API](https://img.shields.io/badge/Open--Meteo-Live%20API-0055FF?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+## What works in this version
 
----
+- Manual model inputs for an illustrative training-plant prediction.
+- An Open-Meteo weather experiment for the next 48 full UTC hours. It assumes the model's irradiation units match shortwave radiation divided by 1,000, estimates module temperature, and is not a validated 48-hour forecast. Enter the actual training plant's coordinates and local time zone; the defaults are placeholders.
+- CSV upload for comparing independently supplied hourly actual and expected values. This is not a live SCADA connection, and deviations do not identify their causes. Shortfall values are illustrative, not proven lost revenue or savings.
+- An expanding-window chronological benchmark of **historical measured sensor inputs**, with a previous-day baseline, MAE, RMSE, R² and optional capacity-normalized MAE. It does not evaluate 48-hour-ahead forecasts.
 
-## 📌 Executive Overview
+See [APPLY_CHANGES.md](APPLY_CHANGES.md) for installation, training, tests, CSV requirements, limitations and next steps.
 
-Intermittency and unscheduled hardware downtime cost utility-scale solar asset owners billions annually. A **1% error in generation forecasting** or **unaddressed panel soiling** can result in $500k–$2M in annual revenue loss per facility.
+## Important limitations
 
-**SolarQuest-AI** solves this by providing:
-1. **48-Hour Ultra-Precise Generation Forecasting**: Powered by an ML model ($R^2 = 0.9838$) trained on sensor telemetry and integrated with live satellite weather APIs.
-2. **Automated Anomaly & Revenue Protection Engine**: Real-time divergence detection between AI yield targets and SCADA plant telemetry to flag panel soiling, inverter faults, and daily monetary loss.
+No SCADA integration, verified alerting, field validation, multi-site generalization, market settlement, equipment fault classification, or 48-hour forecast backtest is implemented here. There is no capacity scaling, ROI claim or CO₂ estimate. Model and source data units, site capacity, licensing, suitability, missing-data completeness and weather-feature compatibility must be verified before use. The notebook's old workflows and output claims are historical, not validation of this release.
 
----
+Only load model files from a source you trust: `joblib` / pickle files can execute code when loaded. The application never accepts model uploads.
 
-## 🏗️ System Architecture
-┌────────────────────────────────┐ ┌────────────────────────────────┐
-│ Open-Meteo Satellite API │ │ Plant Sensor Telemetry │
-│ (Irradiation, Temp, Clouds) │ │ (DC/AC Power, Module T) │
-└───────────────┬────────────────┘ └────────────────┬───────────────┘
-│ │
-└───────────────────┬─────────────────────┘
-▼
-┌─────────────────────────────┐
-│ Feature Engineering & │
-│ Cyclical Time Encoding │
-└──────────────┬──────────────┘
-▼
-┌─────────────────────────────┐
-│ Linear/XGBoost ML Engine │
-│ (R² Score: 98.38%) │
-└──────────────┬──────────────┘
-▼
-┌─────────────────────────────┐
-│ SolarQuest Dashboard UI │
-│ • 48h Generation Curve │
-│ • Anomaly & Loss Detector │
-│ • PPA Revenue Tracker │
-└─────────────────────────────┘
-
-## ✨ Key Features
-
-- **📡 Live Global API Integration**: Select any pre-configured mega-solar park (*Bhadla - India*, *Mojave - USA*, *Al Dhafra - UAE*, *Benban - Egypt*) or input custom GPS coordinates to pull real-time weather forecasts.
-- **🎯 98.38% Forecast Accuracy**: Trained on 68,000+ data points of solar panel sensor telemetry.
-- **🚨 Automated Hardware Fault Engine**: Detects panel soiling or inverter failures by comparing expected AI generation against actual telemetry.
-- **💰 Financial Impact Analytics**: Live tracking of daily revenue ($/kWh PPA rate) and monetary loss due to inefficiencies.
-- **🌱 Carbon Offset Telemetry**: Live tracking of estimated daily $CO_2$ displacement in tons.
-
----
-
-## 📊 Model Performance
-
-| Metric | Score |
-|---|---|
-| **$R^2$ Score (Accuracy)** | **98.38%** |
-| **Mean Absolute Error (MAE)** | **Low Variance Across Peak Irradiation Hours** |
-| **Training Data Size** | **68,000+ Timestamps (Generation + Sensor Fusion)** |
-
----
-
-## 🛠️ Tech Stack & Dependencies
-
-- **Language**: Python 3.10+
-- **Machine Learning**: `scikit-learn`, `xgboost`, `joblib`
-- **Data Pipeline**: `pandas`, `numpy`
-- **Dashboard & UI**: `streamlit`, `plotly`
-- **API Integration**: `requests` (Open-Meteo Global Weather API)
-
----
-
+License: MIT (see LICENSE).

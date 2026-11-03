@@ -1,0 +1,20 @@
+{
+  "warning": "Exploratory same-site test. Time zone, interval convention and generation units are unconfirmed.",
+  "training_rows": 428,
+  "last_training_time": "2025-06-18 22:00:00",
+  "july_generation_rows": 504,
+  "july_weather_matched": 501,
+  "unmatched_july_rows": 3,
+  "baseline_missing_rows": 0,
+  "all_paired_rows": {
+    "rows": 501,
+    "model_mae_source_units": 3.711,
+    "baseline_mae_source_units": 4.48
+  },
+  "positive_forecast_radiation_rows": {
+    "rows": 336,
+    "model_mae_source_units": 5.475,
+    "baseline_mae_source_units": 6.65
+  },
+  "baseline": "Generation from 72 hours earlier; assumes timely availability."
+}

@@ -1,0 +1,32 @@
+{
+  "warning": "Exploratory same-site test. Time zone, source units and hourly interval conventions are unconfirmed. Baselines assume timely telemetry. Not an operational validation.",
+  "holdout_local_start": "2025-07-22 00:00:00",
+  "holdout_local_end": "2025-07-31 23:00:00",
+  "python_version": "3.11.18",
+  "sklearn_version": "1.6.1",
+  "training_rows": 428,
+  "last_training_local_time": "2025-06-18 22:00:00",
+  "all_hours": {
+    "rows": 240,
+    "model_mae": 3.469,
+    "baseline_72h_mae": 4.183,
+    "baseline_7d_mae": 3.969
+  },
+  "positive_forecast_radiation": {
+    "rows": 160,
+    "model_mae": 5.181,
+    "baseline_72h_mae": 6.261,
+    "baseline_7d_mae": 5.927
+  },
+  "input_sha256": {
+    "data/rooftop_generation.csv": "cc0cb86cf525e2763be12bcedd944d1434447d3fa1361282b10ae0389b7f0bbb",
+    "data/weather_48h_june_2025.json": "7c5cd353ecb70a8e59b2cc5aac781cc84b0058ae28b08f10ccbbf9bb47e1f0b4",
+    "data/weather_weekly/2025-07-01_to_2025-07-07.json": "1a4c5839b0baf730ceb1b1e02a69fe2eb7b009205f3dcf9b2e1e199844e81366",
+    "data/weather_weekly/2025-07-08_to_2025-07-14.json": "d7291d36a9307fb4e39e83fdfd619162ed6b91fef894b98fd8758e74d4da080a",
+    "data/weather_weekly/2025-07-15_to_2025-07-21.json": "a3251565bed0d03d1579ab1f642bad94f4971d435dfd19cd1cacb3ee0dfe0d93",
+    "data/weather_holdout/week1.json": "a8f548d64c3b8d283a92ebc8bda5f44532c32e220b7d81681f8d0f4317d2c771",
+    "data/weather_holdout/week2.json": "4fda0dc963820374746604e7653d6ae6114172312809d9e0bd9ef7c414bd81f3",
+    "evaluate_july.py": "0fec2d5dc281a90870f23d0778ba8e752978539e9beae4b06ffe16356562e9de",
+    "evaluate_late_july.py": "3cb256d76e053dd7be006c60529e37774cbecb8dd1ef1c6ead8324fa476ddc82"
+  }
+}

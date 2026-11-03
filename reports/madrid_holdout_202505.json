@@ -1,0 +1,36 @@
+{
+  "warning": "Exploratory same-site test for T1_S1_Pac. Weather-to-meter alignment is provisional. Power is a five-second sampled mean in watts. Only complete hours are scored; missing hours are not zero. Baselines assume timely telemetry. This is not operational validation or cross-site model transfer.",
+  "python_version": "3.11.18",
+  "sklearn_version": "1.6.1",
+  "qc_complete_hours_in_may": 474,
+  "train_rows": 314,
+  "last_training_hour_start_local": "2025-05-21 21:00:00",
+  "holdout_start_local": "2025-05-24 00:00:00",
+  "holdout_end_exclusive_local": "2025-06-01 00:00:00",
+  "eligible_holdout_rows": 128,
+  "model_mae_all_eligible_w": 54.841,
+  "missing_72h_baseline_rows": 0,
+  "missing_7d_baseline_rows": 0,
+  "paired_all": {
+    "rows": 128,
+    "model_mae_w": 54.841,
+    "baseline_72h_mae_w": 30.657,
+    "baseline_7d_mae_w": 50.665
+  },
+  "paired_positive_forecast_radiation": {
+    "rows": 123,
+    "model_mae_w": 57.07,
+    "baseline_72h_mae_w": 31.903,
+    "baseline_7d_mae_w": 52.725
+  },
+  "input_sha256": {
+    "reports/madrid_may_hourly_qc.csv": "6dc9513af1330fb3ed9481f1aedc7d3b2ebf0188761fc920e7731a71598c13ac",
+    "madrid_may_qc.py": "9a57ea3eeb26cb2a1b3c768618e6b4e3c03a7ed4142ac1d8c252ea65f9baf306",
+    "evaluate_madrid.py": "82fb5fe050e14a82a64bd65107b04a5e1a522547e283e013ce4b1f69ba4629e1",
+    "data/madrid/weather_48h_20250430_20250507.json": "17c53d523e4b02b7c66a9be79921cc46365bfa847b5e2013760dd153d0f27669",
+    "data/madrid/weather_48h_2025-05-08_to_2025-05-14.json": "ba80d9226b5805165982cddf54acaad5ceff74042489134b3d9a46ff8ad97fe5",
+    "data/madrid/weather_48h_2025-05-15_to_2025-05-21.json": "2d2cb02a08dcf67f0d91a3b71e96ffd33e94a09b899a4280485f8d63792e373e",
+    "data/madrid/weather_48h_2025-05-22_to_2025-05-28.json": "64329135b6ee0e8edb220e12b2370e7f73a5923c927f103116a4bc2138783ade",
+    "data/madrid/weather_48h_2025-05-29_to_2025-05-31.json": "d4e9e183e01a193e502bcabd5abff377444da25a879d3c11d83c24ee9c59a265"
+  }
+}

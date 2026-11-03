@@ -1,0 +1,16 @@
+{
+  "source": "data/madrid/power_202505.zip",
+  "source_sha256": "ef041d7d572e326891a52a481fc0918eab8588cfd0fbdc1e9d90665335258466",
+  "channel": "T1_S1_Pac",
+  "input_rows": 366313,
+  "invalid_timestamp_rows_excluded": 0,
+  "total_hours_checked": 744,
+  "hours_by_status": {
+    "complete": 474,
+    "no_readings": 249,
+    "duplicate_timestamps": 8,
+    "conflicting_duplicates": 8,
+    "incomplete_or_off_grid": 5
+  },
+  "notes": "Sampled mean power in watts is reported only for complete, unique and valid five-second grids. No interpolation, zero-filling or automatic duplicate resolution. Hour-end UTC is a provisional key for preceding-hour weather radiation."
+}

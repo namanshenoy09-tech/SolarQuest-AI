@@ -1,0 +1,40 @@
+{
+  "warning": "Exploratory same-site test. Selected complete hours only. Timing alignment is provisional. Previous-day2 weather fields are not necessarily one simultaneously issued 48-hour forecast. Baselines assume timely telemetry. Not operational validation or cross-site transfer.",
+  "python_version": "3.11.18",
+  "sklearn_version": "1.6.1",
+  "training_rows": 314,
+  "last_training_hour_start_local": "2025-05-21 21:00:00",
+  "may_paired_reproduction": {
+    "rows": 128,
+    "model_mae_w": 54.841,
+    "baseline_72h_mae_w": 30.657,
+    "baseline_7d_mae_w": 50.665
+  },
+  "holdout_start_local": "2025-06-23 00:00:00",
+  "holdout_end_exclusive_local": "2025-07-01 00:00:00",
+  "total_calendar_hours": 192,
+  "complete_target_hours": 128,
+  "model_mae_all_complete_w": 65.667,
+  "missing_72h_baseline_rows": 0,
+  "missing_7d_baseline_rows": 5,
+  "paired_all": {
+    "rows": 123,
+    "model_mae_w": 66.809,
+    "baseline_72h_mae_w": 79.021,
+    "baseline_7d_mae_w": 67.972
+  },
+  "paired_positive_forecast_radiation": {
+    "rows": 123,
+    "model_mae_w": 66.809,
+    "baseline_72h_mae_w": 79.021,
+    "baseline_7d_mae_w": 67.972
+  },
+  "input_sha256": {
+    "reports/madrid_holdout_202505.json": "4bd6a390c1b5861debdde7b91247a26faf2cc3b2f875503390f3ef2f137a724d",
+    "reports/madrid_june_hourly_qc.csv": "3cc8976ad19d6de3d729ceac40073ca05179bcdea36e7e6f8f1f6fd6923db175",
+    "madrid_june_qc.py": "953a3540bd79637e1cea312bb981b9343c77dc821f12434c458c6a456a7a652c",
+    "evaluate_madrid_june.py": "aed516f85af41329531035a655105b16039b2a9124ff582dffe1901b0e084e80",
+    "data/madrid/weather_48h_2025-06-22_to_2025-06-28.json": "0ef89ecdfc03b5e1e7dd597d9627e6d7d94539bf3e3875f717a70d93385308d2",
+    "data/madrid/weather_48h_2025-06-29_to_2025-06-30.json": "d8dddabab3b2066ca64df450c8fbf466cd198ed16809a55a50d211e0af52716d"
+  }
+}

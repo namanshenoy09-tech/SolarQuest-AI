@@ -1,0 +1,18 @@
+{
+  "source": "data/cyprus/2025_05.csv",
+  "source_sha256": "8ceff70f2088d5ea1c72f5a5915355ff03981b2343153c49589a18ca380d6faa",
+  "dataset": "https://doi.org/10.5281/zenodo.20800202",
+  "channel": "pv_power (W)",
+  "input_rows": 89280,
+  "missing_invalid_or_offset_free_timestamps": 0,
+  "missing_power_rows": 47533,
+  "invalid_nonmissing_power_rows": 0,
+  "finite_power_rows": 41747,
+  "negative_power_rows": 0,
+  "total_local_hours_checked": 744,
+  "hours_by_status": {
+    "missing_or_invalid_power": 403,
+    "complete": 341
+  },
+  "notes": "Exploratory quality audit only; no training or forecast evaluation. Asia/Nicosia is a provisional timezone interpretation checked against source offsets for May only. Power is labelled W, but sampling and interval semantics and capacity definitions remain to be confirmed. Sampled mean is provided only when all 120 unique on-grid readings are finite. Missing is not zero."
+}

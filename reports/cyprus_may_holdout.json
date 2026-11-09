@@ -1,0 +1,133 @@
+{
+  "warning": "Exploratory same-site retraining, not cross-site transfer or operational validation. Only selected complete hours are scored; missing is not zero. Meter and weather alignment are provisional; previous-day2 is not necessarily one simultaneously issued 48-hour forecast. Baselines assume timely telemetry. Training spans only a few days.",
+  "python_version": "3.11.18",
+  "sklearn_version": "1.6.1",
+  "training_hour_start_exclusive_cutoff_local": "2025-05-21 23:00:00 Asia/Nicosia",
+  "training_complete_hours": 105,
+  "training_weather_unmatched": 0,
+  "training_rows": 105,
+  "training_local_days": 5,
+  "holdout_start_local": "2025-05-24 00:00:00 Asia/Nicosia",
+  "holdout_end_exclusive_local": "2025-06-01 00:00:00 Asia/Nicosia",
+  "total_calendar_hours": 192,
+  "complete_target_hours": 189,
+  "holdout_weather_unmatched": 0,
+  "holdout_weather_matched": 189,
+  "missing_72h_baseline": 5,
+  "missing_7d_baseline": 16,
+  "paired_all": {
+    "rows": 169,
+    "model_mae_w": 421.059,
+    "baseline_72h_mae_w": 371.63,
+    "baseline_7d_mae_w": 366.847
+  },
+  "paired_positive_forecast_radiation": {
+    "rows": 108,
+    "model_mae_w": 658.879,
+    "baseline_72h_mae_w": 581.532,
+    "baseline_7d_mae_w": 574.048
+  },
+  "daily_paired": {
+    "2025-05-24": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 12,
+        "model_mae_w": 442.004,
+        "baseline_72h_mae_w": 65.386,
+        "baseline_7d_mae_w": 305.725
+      }
+    },
+    "2025-05-25": {
+      "calendar_hours": 24,
+      "complete_target_hours": 23,
+      "weather_matched_hours": 23,
+      "paired_scores": {
+        "rows": 23,
+        "model_mae_w": 199.479,
+        "baseline_72h_mae_w": 287.477,
+        "baseline_7d_mae_w": 257.333
+      }
+    },
+    "2025-05-26": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 21,
+        "model_mae_w": 481.105,
+        "baseline_72h_mae_w": 417.832,
+        "baseline_7d_mae_w": 543.891
+      }
+    },
+    "2025-05-27": {
+      "calendar_hours": 24,
+      "complete_target_hours": 23,
+      "weather_matched_hours": 23,
+      "paired_scores": {
+        "rows": 23,
+        "model_mae_w": 296.636,
+        "baseline_72h_mae_w": 97.921,
+        "baseline_7d_mae_w": 254.472
+      }
+    },
+    "2025-05-28": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 22,
+        "model_mae_w": 236.73,
+        "baseline_72h_mae_w": 150.064,
+        "baseline_7d_mae_w": 56.796
+      }
+    },
+    "2025-05-29": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 24,
+        "model_mae_w": 601.251,
+        "baseline_72h_mae_w": 751.629,
+        "baseline_7d_mae_w": 489.21
+      }
+    },
+    "2025-05-30": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 21,
+        "model_mae_w": 425.682,
+        "baseline_72h_mae_w": 420.501,
+        "baseline_7d_mae_w": 415.661
+      }
+    },
+    "2025-05-31": {
+      "calendar_hours": 24,
+      "complete_target_hours": 23,
+      "weather_matched_hours": 23,
+      "paired_scores": {
+        "rows": 23,
+        "model_mae_w": 685.375,
+        "baseline_72h_mae_w": 617.876,
+        "baseline_7d_mae_w": 583.294
+      }
+    }
+  },
+  "input_sha256": {
+    "reports/cyprus_may_protocol.md": "2a0dfc8f866d627690316f8a37860d045e1c4cd54b8af48c3f47ad497fa7d8c6",
+    "reports/cyprus_may_feasibility.json": "1c11b5552800f99fbf965395e47b939656e9c5e00163399916f3a874cea45e44",
+    "reports/cyprus_may_weather_join.json": "66803a9677afc1cd7d7895e68890bcc46e42f2a857c8340dac8e1fa511018a0f",
+    "fetch_cyprus_may_weather.py": "9eeacc4941badb6e20b7781647f196b56665843b6b6c3d8f1b7bd435dd9a8d83",
+    "cyprus_may_weather_join.py": "8da3171e9c5e99061dbc0b10e76b45e109cf9d733154351693d791f2f47ee9d9",
+    "reports/cyprus_may_hourly_qc.csv": "a31f424ef1a4e590843dc6f21da21bcd5e3bd708775399c136e5ab70ae225a1a",
+    "cyprus_may_feasibility.py": "d516d5d4161070b59c085e2a6e3c56ea04ca9ebc8a6cfa8328c37678b5ca9d3e",
+    "evaluate_cyprus_may.py": "4a6fcc7afcd64eb27aae2a22ab071d60a7a23ac6be8e1fafcdb458f2b00b892c",
+    "data/cyprus/weather_48h_2025-05-17_to_2025-05-23.json": "02ce1e00f3dae054181d698948036d2e8959168f5998fe57ab4e57d42a1d40ac",
+    "data/cyprus/weather_48h_2025-05-24_to_2025-05-30.json": "1771299f358f78a432a4638e8202c137097081def2567cd588af7b4563d86b5d",
+    "data/cyprus/weather_48h_2025-05-31_to_2025-05-31.json": "ab10c94151ad3bb6cfcee0a8c1ee7f465a6508eb6291ee947bc65be8d4dde81f"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "warning": "Weather timestamp coverage only. No model trained or scored. Timezone and meter alignment are provisional. The forecast grid is not necessarily the site; previous-day2 is not necessarily one simultaneously issued 48-hour forecast.",
+  "requested_site": {
+    "latitude": 34.927423,
+    "longitude": 33.475382
+  },
+  "response_grid_points": [
+    {
+      "file": "data/cyprus/weather_48h_2025-05-17_to_2025-05-23.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-05-24_to_2025-05-30.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-05-31_to_2025-05-31.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    }
+  ],
+  "training_complete_hours": 105,
+  "training_weather_matched": 105,
+  "training_weather_unmatched": 0,
+  "holdout_complete_hours": 189,
+  "holdout_weather_matched": 189,
+  "holdout_weather_unmatched": 0,
+  "holdout_both_baselines_and_weather": 169,
+  "feasibility_floors_met": true,
+  "protocol_sha256": "2a0dfc8f866d627690316f8a37860d045e1c4cd54b8af48c3f47ad497fa7d8c6",
+  "feasibility_sha256": "1c11b5552800f99fbf965395e47b939656e9c5e00163399916f3a874cea45e44",
+  "join_script_sha256": "8da3171e9c5e99061dbc0b10e76b45e109cf9d733154351693d791f2f47ee9d9",
+  "downloader_sha256": "9eeacc4941badb6e20b7781647f196b56665843b6b6c3d8f1b7bd435dd9a8d83",
+  "weather_input_sha256": {
+    "data/cyprus/weather_48h_2025-05-17_to_2025-05-23.json": "02ce1e00f3dae054181d698948036d2e8959168f5998fe57ab4e57d42a1d40ac",
+    "data/cyprus/weather_48h_2025-05-24_to_2025-05-30.json": "1771299f358f78a432a4638e8202c137097081def2567cd588af7b4563d86b5d",
+    "data/cyprus/weather_48h_2025-05-31_to_2025-05-31.json": "ab10c94151ad3bb6cfcee0a8c1ee7f465a6508eb6291ee947bc65be8d4dde81f"
+  }
+}

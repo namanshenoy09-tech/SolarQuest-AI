@@ -1,0 +1,33 @@
+{
+  "warning": "Quality and baseline availability only. Weather has not been joined; baselines assume timely telemetry. No model has been trained or scored. Data quality was inspected before the protocol.",
+  "training_complete_hours_before_weather": 105,
+  "training_complete_hours_by_local_day": {
+    "2025-05-17": 12,
+    "2025-05-18": 24,
+    "2025-05-19": 23,
+    "2025-05-20": 24,
+    "2025-05-21": 22
+  },
+  "holdout_calendar_hours": 192,
+  "holdout_complete_hours_before_weather": 189,
+  "missing_72h_baseline": 5,
+  "missing_7d_baseline": 16,
+  "holdout_with_both_baselines_before_weather": 169,
+  "paired_hours_by_local_day_before_weather": {
+    "2025-05-24": 12,
+    "2025-05-25": 23,
+    "2025-05-26": 21,
+    "2025-05-27": 23,
+    "2025-05-28": 22,
+    "2025-05-29": 24,
+    "2025-05-30": 21,
+    "2025-05-31": 23
+  },
+  "protocol_sha256": "2a0dfc8f866d627690316f8a37860d045e1c4cd54b8af48c3f47ad497fa7d8c6",
+  "input_sha256": {
+    "data/cyprus/2025_05.csv": "8ceff70f2088d5ea1c72f5a5915355ff03981b2343153c49589a18ca380d6faa",
+    "cyprus_may_audit.py": "2c6f7de5e37c76764ed0608abb5788d18c1e0ca687c9668c0e3825019c1f60db",
+    "reports/cyprus_may_hourly_qc.csv": "a31f424ef1a4e590843dc6f21da21bcd5e3bd708775399c136e5ab70ae225a1a",
+    "reports/cyprus_may_qc_summary.json": "c0c55e1216e3dd8a3c5662bfcb7378e47293d2b86d9cc9db6a07b640ee458832"
+  }
+}

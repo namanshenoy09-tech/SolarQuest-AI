@@ -1,0 +1,64 @@
+{
+  "warning": "Coverage only; no models trained or scored. May inputs must be rechecked during evaluation. Timezone and alignment are provisional, weather uses a grid point, and previous-day2 is not necessarily a simultaneous 48-hour forecast. Baselines assume timely telemetry.",
+  "march_complete_hours": 725,
+  "march_weather_matched": 725,
+  "march_weather_unmatched": 0,
+  "july_holdout_calendar_hours": 192,
+  "july_complete_target_hours": 188,
+  "july_weather_matched": 188,
+  "july_weather_unmatched": 0,
+  "july_both_baselines_before_weather": 184,
+  "july_both_baselines_and_weather": 184,
+  "march_and_july_feasibility_floors_met": true,
+  "may_105_original_training_rows_rechecked": false,
+  "response_grid_points": [
+    {
+      "file": "data/cyprus/weather_48h_2025-02-28_to_2025-03-06.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-07_to_2025-03-13.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-14_to_2025-03-20.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-21_to_2025-03-27.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-28_to_2025-03-31.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-07-22_to_2025-07-28.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-07-29_to_2025-07-30.json",
+      "latitude": 34.918278,
+      "longitude": 33.409603
+    }
+  ],
+  "protocol_sha256": "471d924e356dbafc1682fea5ecfb9916763af746089359986b59ff412ace56fa",
+  "qc_manifest_sha256": "ca460c68f44e4eba48aa98e887bae10c95acf3a44876f120d949e5687ee56663",
+  "downloader_sha256": "897e2e30bf66761fff03cc42f1e877e11dad0a1789f766f507c55020d5254592",
+  "join_script_sha256": "2c6e1e8f1b8d2ad3a2069daec719e4d6cf8fd44febca51552625c4532b86247b",
+  "weather_input_sha256": {
+    "data/cyprus/weather_48h_2025-02-28_to_2025-03-06.json": "9c5a441440928c7d24b5e3e0d5f0fdf9d9f0e17a3c79424b76cd0e1996c3bbec",
+    "data/cyprus/weather_48h_2025-03-07_to_2025-03-13.json": "1ac061a60b5a231a6f83ee83ee70131f676f628454fc962686afddbec8f16e8f",
+    "data/cyprus/weather_48h_2025-03-14_to_2025-03-20.json": "c7df2d77f3b078fbe76b10b1265bd294e8832a17077b978ff832b8126e722679",
+    "data/cyprus/weather_48h_2025-03-21_to_2025-03-27.json": "abdfeb2f85bd635f17d5aebc0d6634807ca74437242dce0b4f00b623ec42e450",
+    "data/cyprus/weather_48h_2025-03-28_to_2025-03-31.json": "8dd1549d7d2597924df268e5c1281816ba9f82c28f41f04f42e55ba4695b283e",
+    "data/cyprus/weather_48h_2025-07-22_to_2025-07-28.json": "0b8b9425b5075da1d090b9517f4c7dbe9d65ea8fbdef481b1a456c329c021828",
+    "data/cyprus/weather_48h_2025-07-29_to_2025-07-30.json": "399979d46673dc4c6fee3e5e0c618c51710ab08d9e291ea4dcb540f8f8e8a4e4"
+  }
+}

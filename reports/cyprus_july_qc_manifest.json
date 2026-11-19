@@ -1,0 +1,13 @@
+{
+  "warning": "Quality input fingerprints recorded before forecast scoring. Timezone and meter alignment remain provisional.",
+  "input_sha256": {
+    "reports/cyprus_july_training_comparison_protocol.md": "471d924e356dbafc1682fea5ecfb9916763af746089359986b59ff412ace56fa",
+    "cyprus_multi_month_qc.py": "c84cb0eb6b6a873d05e02b8cf48231a0503b512f4f79bc7c143b7277760c9505",
+    "data/cyprus/2025_03.csv": "91b55174e08bb4ec5b269cd2881357b78018b7f22c9ae8472d690dfce53dda33",
+    "reports/cyprus_2025_03_hourly_qc.csv": "0727c7281c12979eaeb7f6e571f4290c1d7fd2ff0c2e57d43d5c2c167b86f99b",
+    "reports/cyprus_2025_03_qc_summary.json": "de416ce08cb4dacaae9c2be41607beaae1e6a87b974f2388f3e20a1a6d9c7691",
+    "data/cyprus/2025_07.csv": "88b36d04ef36a61c4f600057da87401e24ba76f9d5e372360f9f86caeb4b5a50",
+    "reports/cyprus_2025_07_hourly_qc.csv": "c93e6917c800bd47dbdff07b4597609792c0d78079c3fcf3f668dc709c1972d1",
+    "reports/cyprus_2025_07_qc_summary.json": "f9032a3e0f4983be4ef6dac692ba4e5b9045691bad57efcdacb9cccedb6ec94d"
+  }
+}

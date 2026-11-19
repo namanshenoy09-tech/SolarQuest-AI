@@ -1,0 +1,28 @@
+{
+  "source": "data/cyprus/2025_07.csv",
+  "source_sha256": "88b36d04ef36a61c4f600057da87401e24ba76f9d5e372360f9f86caeb4b5a50",
+  "protocol_sha256": "471d924e356dbafc1682fea5ecfb9916763af746089359986b59ff412ace56fa",
+  "audit_script_sha256": "c84cb0eb6b6a873d05e02b8cf48231a0503b512f4f79bc7c143b7277760c9505",
+  "month": "2025_07",
+  "input_rows": 89280,
+  "missing_power_rows": 19173,
+  "invalid_nonmissing_power_rows": 0,
+  "finite_power_rows": 70107,
+  "negative_power_rows": 0,
+  "source_offsets": {
+    "+03:00": 89280
+  },
+  "total_local_hours_checked": 744,
+  "hours_by_status": {
+    "complete": 573,
+    "missing_or_invalid_power": 171
+  },
+  "notes": "UTC-grid quality audit only; no model trained or scored. A complete hour has 120 unique, aligned, finite 30-second power readings. Missing is not zero. Asia/Nicosia and hour-end alignment remain provisional; March has a local clock change.",
+  "fixed_july_23_30_holdout": {
+    "calendar_hours": 192,
+    "complete_target_hours": 188,
+    "missing_72h_baseline": 3,
+    "missing_7d_baseline": 1,
+    "complete_targets_with_both_baselines_before_weather": 184
+  }
+}

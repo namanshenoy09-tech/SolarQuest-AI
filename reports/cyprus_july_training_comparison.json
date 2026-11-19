@@ -1,0 +1,257 @@
+{
+  "warning": "Exploratory same-site retraining, not cross-site transfer or operational validation. Missing is not zero. Meter timing, capacity basis and timezone are provisional; archived previous-day2 is not necessarily one simultaneously issued 48-hour forecast. Baselines assume timely telemetry. No financial savings inferred.",
+  "python_version": "3.11.18",
+  "sklearn_version": "1.6.1",
+  "may_report_reproduced_before_july_scoring": true,
+  "model_a_may_training_rows": 105,
+  "model_b_may_training_rows": 105,
+  "model_b_march_training_rows": 725,
+  "model_b_total_training_rows": 830,
+  "july_holdout_start_local": "2025-07-23 00:00:00+03:00",
+  "july_holdout_end_exclusive_local": "2025-07-31 00:00:00+03:00",
+  "july_calendar_hours": 192,
+  "july_complete_targets": 188,
+  "july_weather_matched": 188,
+  "missing_72h_baseline": 3,
+  "missing_7d_baseline": 1,
+  "paired_all": {
+    "rows": 184,
+    "model_a_mae_w": 232.398,
+    "model_b_mae_w": 310.196,
+    "baseline_72h_mae_w": 63.96,
+    "baseline_7d_mae_w": 122.261
+  },
+  "paired_positive_forecast_radiation": {
+    "rows": 113,
+    "model_a_mae_w": 378.419,
+    "model_b_mae_w": 505.098,
+    "baseline_72h_mae_w": 104.148,
+    "baseline_7d_mae_w": 199.079
+  },
+  "daily_paired": {
+    "2025-07-23": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 24,
+        "model_a_mae_w": 152.486,
+        "model_b_mae_w": 266.234,
+        "baseline_72h_mae_w": 66.077,
+        "baseline_7d_mae_w": 100.982
+      }
+    },
+    "2025-07-24": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 23,
+        "model_a_mae_w": 174.646,
+        "model_b_mae_w": 288.155,
+        "baseline_72h_mae_w": 47.733,
+        "baseline_7d_mae_w": 179.885
+      }
+    },
+    "2025-07-25": {
+      "calendar_hours": 24,
+      "complete_target_hours": 23,
+      "weather_matched_hours": 23,
+      "paired_scores": {
+        "rows": 23,
+        "model_a_mae_w": 163.435,
+        "model_b_mae_w": 269.652,
+        "baseline_72h_mae_w": 49.587,
+        "baseline_7d_mae_w": 221.436
+      }
+    },
+    "2025-07-26": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 24,
+        "model_a_mae_w": 111.122,
+        "model_b_mae_w": 220.473,
+        "baseline_72h_mae_w": 68.151,
+        "baseline_7d_mae_w": 151.308
+      }
+    },
+    "2025-07-27": {
+      "calendar_hours": 24,
+      "complete_target_hours": 23,
+      "weather_matched_hours": 23,
+      "paired_scores": {
+        "rows": 23,
+        "model_a_mae_w": 275.265,
+        "model_b_mae_w": 385.988,
+        "baseline_72h_mae_w": 71.505,
+        "baseline_7d_mae_w": 66.999
+      }
+    },
+    "2025-07-28": {
+      "calendar_hours": 24,
+      "complete_target_hours": 22,
+      "weather_matched_hours": 22,
+      "paired_scores": {
+        "rows": 20,
+        "model_a_mae_w": 255.991,
+        "model_b_mae_w": 326.076,
+        "baseline_72h_mae_w": 65.696,
+        "baseline_7d_mae_w": 116.357
+      }
+    },
+    "2025-07-29": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 24,
+        "model_a_mae_w": 309.526,
+        "model_b_mae_w": 314.153,
+        "baseline_72h_mae_w": 62.645,
+        "baseline_7d_mae_w": 41.764
+      }
+    },
+    "2025-07-30": {
+      "calendar_hours": 24,
+      "complete_target_hours": 24,
+      "weather_matched_hours": 24,
+      "paired_scores": {
+        "rows": 23,
+        "model_a_mae_w": 425.188,
+        "model_b_mae_w": 418.551,
+        "baseline_72h_mae_w": 80.298,
+        "baseline_7d_mae_w": 101.746
+      }
+    }
+  },
+  "weather_request_and_grid_metadata": [
+    {
+      "file": "data/cyprus/weather_48h_2025-02-28_to_2025-03-06.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-02-28",
+        "end_date": "2025-03-06",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-07_to_2025-03-13.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-03-07",
+        "end_date": "2025-03-13",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-14_to_2025-03-20.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-03-14",
+        "end_date": "2025-03-20",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-21_to_2025-03-27.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-03-21",
+        "end_date": "2025-03-27",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-03-28_to_2025-03-31.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-03-28",
+        "end_date": "2025-03-31",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-07-22_to_2025-07-28.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-07-22",
+        "end_date": "2025-07-28",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    },
+    {
+      "file": "data/cyprus/weather_48h_2025-07-29_to_2025-07-30.json",
+      "request_parameters": {
+        "latitude": 34.927423,
+        "longitude": 33.475382,
+        "start_date": "2025-07-29",
+        "end_date": "2025-07-30",
+        "hourly": "temperature_2m_previous_day2,shortwave_radiation_previous_day2",
+        "timezone": "UTC"
+      },
+      "grid_latitude": 34.918278,
+      "grid_longitude": 33.409603
+    }
+  ],
+  "input_sha256": {
+    "reports/cyprus_july_training_comparison_protocol.md": "471d924e356dbafc1682fea5ecfb9916763af746089359986b59ff412ace56fa",
+    "reports/cyprus_may_holdout.json": "4f0081ad2892ff40a58fbdf9aae64a73b82134edb9e5d4407f3c73381251d50c",
+    "reports/cyprus_may_reproduction.json": "4f0081ad2892ff40a58fbdf9aae64a73b82134edb9e5d4407f3c73381251d50c",
+    "reports/cyprus_july_qc_manifest.json": "ca460c68f44e4eba48aa98e887bae10c95acf3a44876f120d949e5687ee56663",
+    "reports/cyprus_july_weather_join.json": "099bfac16c85602d0baa61529320aa2863f39d8bd0fc36c9b76e0785fb981bdc",
+    "fetch_cyprus_march_july_weather.py": "897e2e30bf66761fff03cc42f1e877e11dad0a1789f766f507c55020d5254592",
+    "cyprus_july_weather_join.py": "2c6e1e8f1b8d2ad3a2069daec719e4d6cf8fd44febca51552625c4532b86247b",
+    "evaluate_cyprus_july_comparison.py": "948ac635a1108dde7343368ed08b8942f497a812914b066c37c42d34e482c45c",
+    "reports/cyprus_may_protocol.md": "2a0dfc8f866d627690316f8a37860d045e1c4cd54b8af48c3f47ad497fa7d8c6",
+    "reports/cyprus_may_feasibility.json": "1c11b5552800f99fbf965395e47b939656e9c5e00163399916f3a874cea45e44",
+    "reports/cyprus_may_weather_join.json": "66803a9677afc1cd7d7895e68890bcc46e42f2a857c8340dac8e1fa511018a0f",
+    "fetch_cyprus_may_weather.py": "9eeacc4941badb6e20b7781647f196b56665843b6b6c3d8f1b7bd435dd9a8d83",
+    "cyprus_may_weather_join.py": "8da3171e9c5e99061dbc0b10e76b45e109cf9d733154351693d791f2f47ee9d9",
+    "reports/cyprus_may_hourly_qc.csv": "a31f424ef1a4e590843dc6f21da21bcd5e3bd708775399c136e5ab70ae225a1a",
+    "cyprus_may_feasibility.py": "d516d5d4161070b59c085e2a6e3c56ea04ca9ebc8a6cfa8328c37678b5ca9d3e",
+    "evaluate_cyprus_may.py": "4a6fcc7afcd64eb27aae2a22ab071d60a7a23ac6be8e1fafcdb458f2b00b892c",
+    "data/cyprus/weather_48h_2025-05-17_to_2025-05-23.json": "02ce1e00f3dae054181d698948036d2e8959168f5998fe57ab4e57d42a1d40ac",
+    "data/cyprus/weather_48h_2025-05-24_to_2025-05-30.json": "1771299f358f78a432a4638e8202c137097081def2567cd588af7b4563d86b5d",
+    "data/cyprus/weather_48h_2025-05-31_to_2025-05-31.json": "ab10c94151ad3bb6cfcee0a8c1ee7f465a6508eb6291ee947bc65be8d4dde81f",
+    "cyprus_multi_month_qc.py": "c84cb0eb6b6a873d05e02b8cf48231a0503b512f4f79bc7c143b7277760c9505",
+    "data/cyprus/2025_03.csv": "91b55174e08bb4ec5b269cd2881357b78018b7f22c9ae8472d690dfce53dda33",
+    "reports/cyprus_2025_03_hourly_qc.csv": "0727c7281c12979eaeb7f6e571f4290c1d7fd2ff0c2e57d43d5c2c167b86f99b",
+    "reports/cyprus_2025_03_qc_summary.json": "de416ce08cb4dacaae9c2be41607beaae1e6a87b974f2388f3e20a1a6d9c7691",
+    "data/cyprus/2025_07.csv": "88b36d04ef36a61c4f600057da87401e24ba76f9d5e372360f9f86caeb4b5a50",
+    "reports/cyprus_2025_07_hourly_qc.csv": "c93e6917c800bd47dbdff07b4597609792c0d78079c3fcf3f668dc709c1972d1",
+    "reports/cyprus_2025_07_qc_summary.json": "f9032a3e0f4983be4ef6dac692ba4e5b9045691bad57efcdacb9cccedb6ec94d",
+    "data/cyprus/weather_48h_2025-02-28_to_2025-03-06.json": "9c5a441440928c7d24b5e3e0d5f0fdf9d9f0e17a3c79424b76cd0e1996c3bbec",
+    "data/cyprus/weather_48h_2025-03-07_to_2025-03-13.json": "1ac061a60b5a231a6f83ee83ee70131f676f628454fc962686afddbec8f16e8f",
+    "data/cyprus/weather_48h_2025-03-14_to_2025-03-20.json": "c7df2d77f3b078fbe76b10b1265bd294e8832a17077b978ff832b8126e722679",
+    "data/cyprus/weather_48h_2025-03-21_to_2025-03-27.json": "abdfeb2f85bd635f17d5aebc0d6634807ca74437242dce0b4f00b623ec42e450",
+    "data/cyprus/weather_48h_2025-03-28_to_2025-03-31.json": "8dd1549d7d2597924df268e5c1281816ba9f82c28f41f04f42e55ba4695b283e",
+    "data/cyprus/weather_48h_2025-07-22_to_2025-07-28.json": "0b8b9425b5075da1d090b9517f4c7dbe9d65ea8fbdef481b1a456c329c021828",
+    "data/cyprus/weather_48h_2025-07-29_to_2025-07-30.json": "399979d46673dc4c6fee3e5e0c618c51710ab08d9e291ea4dcb540f8f8e8a4e4"
+  }
+}
